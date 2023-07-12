@@ -51,7 +51,7 @@ output "demo1" {
 ## variable from shell env variables
 
 variable "demo2" {
-  default = "null"
+  default = null
 }
 
 output "demo2" {
