@@ -24,11 +24,11 @@ data "aws_ami" "centos8" {
 variable "components" {
   default = {
     cart = {
-      name = cart,
+      name = "cart",
       instance_type = "t3.micro"
     }
     catalogue = {
-      name = catalogue,
+      name = "catalogue",
       instance_type = "t3.small"
     }
   }
