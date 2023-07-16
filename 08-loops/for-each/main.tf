@@ -17,9 +17,13 @@ data "aws_ami" "centos8" {
 }
 
 
-#output "publicip" {
-#  value = aws_instance.web.*.public_ip
-#}
+
+output "publicip" {
+  value = {
+    for k, v in aws_instance.web : k => v.public_ip
+  }
+}
+
 
 variable "components" {
   default = {
