@@ -8,7 +8,6 @@ resource "aws_instance" "web" {
   }
 }
 
-
 data "aws_ami" "centos8" {
 
   most_recent = true
@@ -16,9 +15,14 @@ data "aws_ami" "centos8" {
   owners      = ["973714476881"]
 }
 
-
 variable "instance_type" {}
 variable "name" {}
+
+output "ec2" {
+  value = aws_instance.web
+}
+
+
 
 
 #
