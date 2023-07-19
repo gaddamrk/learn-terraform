@@ -32,9 +32,9 @@ resource "null_resource" "provision" {
   }
 }
 
-resource "aws_security_group" "allow_tls1" {
-  name        = "allow_tls1"
-  description = "Allow TLS1 inbound traffic"
+resource "aws_security_group" "allow_tls2" {
+  name        = "allow_tls2"
+  description = "Allow TLS2 inbound traffic"
 
 
   ingress {
@@ -55,7 +55,7 @@ resource "aws_security_group" "allow_tls1" {
   }
 
   tags = {
-    Name = "allow_tls1"
+    Name = "allow_tls2"
   }
 }
 
