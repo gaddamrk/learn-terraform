@@ -30,9 +30,9 @@ resource "aws_instance" "web" {
 }
 
 
-resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic"
+resource "aws_security_group" "allow_tls1" {
+  name        = "allow_tls1"
+  description = "Allow TLS1 inbound traffic"
 
 
   ingress {
@@ -53,7 +53,7 @@ resource "aws_security_group" "allow_tls" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "allow_tls1"
   }
 }
 
