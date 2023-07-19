@@ -27,7 +27,7 @@ resource "null_resource" "provision" {
     }
 
     inline = [
-      "echo helo"
+      "echo Helo"
     ]
   }
 }
